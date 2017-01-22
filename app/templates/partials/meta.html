@@ -1,0 +1,32 @@
+<title>Photography - Ole Vik</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<script type="text/javascript">
+window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig.init = false;
+</script>
+{# <script type="text/javascript" src="./assets/js/ls.unload.min.js"></script> #}
+<!-- inject:main.js -->
+<script type="text/javascript" src="./assets/js/ls.unveilhooks.min.js"></script>
+<script type="text/javascript" src="./assets/js/ls.parent-fit.min.js"></script>
+<script type="text/javascript" src="./assets/js/lazysizes.min.js"></script>
+<script type="text/javascript" src="./assets/js/classList.min.js"></script>
+<script type="text/javascript" src="./node_modules/baguettebox.js/dist/baguetteBox.min.js"></script>
+<!-- endinject:main.js -->
+<script type="text/javascript">
+lazySizes.init();
+
+function toggleFooter() {
+	var footer = document.getElementById("footer");
+	footer.classList.toggle("active");
+	var overlay = document.getElementById("overlay");
+	overlay.classList.toggle("active");
+}
+</script>
+<!-- inject:main.css -->
+<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap-flex.min.css">
+<link rel="preload" href="./assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+{% include "partials/loadcss.html" %}
+<!-- endinject:main.css -->

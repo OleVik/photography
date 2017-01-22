@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for image in images %}
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	{% if image.height_o > image.width_o %}
+  		{% set orientation = 'portrait' %}
+  	{% else %}
+  		{% set orientation = 'landscape' %}
+  	{% endif %}
+		{% if local_images %}
+			{% set url_l = image.url_l|split('/')|last|prepend('images/') %}
+			{% set url_n = image.url_n|split('/')|last|prepend('images/') %}
+			{% set url_m = image.url_m|split('/')|last|prepend('images/') %}
+			{% set url_z = image.url_z|split('/')|last|prepend('images/') %}
+			{% set url_c = image.url_c|split('/')|last|prepend('images/') %}
+		{% else %}
+			{% set url_l = image.url_l %}
+			{% set url_n = image.url_n %}
+			{% set url_m = image.url_m %}
+			{% set url_z = image.url_z %}
+			{% set url_c = image.url_c %}
+		{% endif %}
+		<a 
+		  href="{{ url_l }}" 
+		  class="image" 
+		  {% if orientation == 'landscape' %}
+		  data-at-320="{{ url_n }}" 
+		  data-at-480="{{ url_m }}" 
+		  data-at-640="{{ url_z }}" 
+		  data-at-768="{{ url_c }}" 
+		  data-at-1024="{{ url_l }}" 
+		  {% else %}
+		  data-at-320="{{ url_m }}" 
+		  data-at-480="{{ url_c }}" 
+		  data-at-640="{{ url_l }}" 
+		  {% endif %}
+		  {# data-caption="{{ image.description._content }}" #} >
+		      <img 
+		    	data-sizes="auto" 
+		    	{% if orientation == 'landscape' %}
+		    	data-src="{{ url_m }}" 
+		    	data-srcset="{{ url_n }} 320w,
+		    	{{ url_m }} 500w,
+		    	{{ url_z }} 640w,
+		    	{{ url_c }} 800w,
+		    	{{ url_l }} 1024w"
+		    	{% else %}
+		    	data-src="{{ url_c }}" 
+		    	data-srcset="{{ url_m }} 334w,
+		    	{{ url_z }} 428w,
+		    	{{ url_c }} 535w,
+		    	{{ url_l }} 685w"
+  				{% endif %}
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="{{ image.title }}" />
+		</a>
+    <h2>{{ image.title }}</h2>
+    <p class="date">{{ image.datetaken }}</p>
+  </article>
+  {% endfor %}
+{% endblock %}

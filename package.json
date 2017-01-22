@@ -1,0 +1,39 @@
+{
+  "name": "olevikme-photography",
+  "version": "1.0.0",
+  "description": "Photography page for OleVik.me",
+  "main": "index.js",
+  "repository": ".",
+  "author": "Ole Vik",
+  "license": "MIT",
+  "dependencies": {
+    "baguettebox.js": "^1.8.1",
+    "bootstrap": "^4.0.0-alpha.5",
+    "object-fit-images": "^2.5.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "del": "^2.2.2",
+    "flickrapi": "^0.6.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-string-replace": "^0.4.0",
+    "gulp-uglify": "^2.0.0",
+    "include-media": "^1.4.9",
+    "modularscale-sass": "^2.1.1",
+    "nconf": "^0.8.4",
+    "node-bourbon": "^4.2.8",
+    "node-sass": "^3.13.0",
+    "request": "^2.79.0"
+  }
+}

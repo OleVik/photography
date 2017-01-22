@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    {% include "partials/meta.html" %}
+  </head>
+  <body id="body" class="loading container-fluid no-gutter">
+    <div id="overlay" onclick="toggleFooter(); return false;"></div>
+    <div class="row no-gutter">
+      <div class="col-xs-12">
+        {% include "partials/header.html" %}
+      </div>
+    </div>
+    <div id="main" class="gallery row no-gutter">
+    {% block content %}{% endblock %}
+    </div>
+    <div class="row no-gutter">
+      <div class="col-xs-12">
+        {% include "partials/footer.html" %}
+      </div>
+    </div>
+    {#<script src="../node_modules/object-fit-images/dist/ofi.browser.js"></script>
+    <script type="text/javascript" src="../node_modules/baguettebox.js/dist/baguetteBox.min.js"></script>#}
+    <script type="text/javascript">
+      baguetteBox.run('.gallery', {
+	    buttons: 'auto',
+        captions: true,
+        noScrollbars: true,
+        animation: 'fadeIn',
+        overlayBackgroundColor: 'rgba(0,0,0.9)'
+      });
+    </script>
+  </body>
+</html>

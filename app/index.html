@@ -1,0 +1,3658 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Photography - Ole Vik</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<script type="text/javascript">
+window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig.init = false;
+</script>
+
+<!-- inject:main.js -->
+<script type="text/javascript" src="./assets/js/ls.unveilhooks.min.js"></script>
+<script type="text/javascript" src="./assets/js/ls.parent-fit.min.js"></script>
+<script type="text/javascript" src="./assets/js/lazysizes.min.js"></script>
+<script type="text/javascript" src="./assets/js/classList.min.js"></script>
+<script type="text/javascript" src="./node_modules/baguettebox.js/dist/baguetteBox.min.js"></script>
+<!-- endinject:main.js -->
+<script type="text/javascript">
+lazySizes.init();
+
+function toggleFooter() {
+	var footer = document.getElementById("footer");
+	footer.classList.toggle("active");
+	var overlay = document.getElementById("overlay");
+	overlay.classList.toggle("active");
+}
+</script>
+<!-- inject:main.css -->
+<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap-flex.min.css">
+<link rel="preload" href="./assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+<script>
+/*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+/*! CSS rel=preload polyfill. Depends on loadCSS function. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT  */
+(function( w ){
+  // rel=preload support test
+  if( !w.loadCSS ){
+	return;
+  }
+  var rp = loadCSS.relpreload = {};
+  rp.support = function(){
+	try {
+	  return w.document.createElement( "link" ).relList.supports( "preload" );
+	} catch (e) {
+	  return false;
+	}
+  };
+
+  // loop preload links and fetch using loadCSS
+  rp.poly = function(){
+	var links = w.document.getElementsByTagName( "link" );
+	for( var i = 0; i < links.length; i++ ){
+	  var link = links[ i ];
+	  if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+		w.loadCSS( link.href, link );
+		link.rel = null;
+	  }
+	}
+  };
+
+  // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+  if( !rp.support() ){
+	rp.poly();
+	var run = w.setInterval( rp.poly, 300 );
+	if( w.addEventListener ){
+	  w.addEventListener( "load", function(){
+		w.clearInterval( run );
+	  } );
+	}
+	if( w.attachEvent ){
+	  w.attachEvent( "onload", function(){
+		w.clearInterval( run );
+	  } )
+	}
+  }
+}( this ));
+</script>
+<!-- endinject:main.css -->
+  </head>
+  <body id="body" class="loading container-fluid no-gutter">
+    <div id="overlay" onclick="toggleFooter(); return false;"></div>
+    <div class="row no-gutter">
+      <div class="col-xs-12">
+        <header id="header">
+	<h1><a href="http://olevik.me/">Ole Vik's</a>&nbsp;<strong>Photo Gallery</strong></h1>
+	<nav>
+		<ul>
+			<li><a href="#footer" onclick="toggleFooter(); return false;">About</a></li>
+		</ul>
+	</nav>
+</header>
+      </div>
+    </div>
+    <div id="main" class="gallery row no-gutter">
+    
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/507/31677290431_b4001b13e6_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/507/31677290431_b4001b13e6_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/507/31677290431_b4001b13e6.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/507/31677290431_b4001b13e6_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/507/31677290431_b4001b13e6_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/507/31677290431_b4001b13e6_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/507/31677290431_b4001b13e6.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/507/31677290431_b4001b13e6_n.jpg 320w,
+		    	https://farm1.staticflickr.com/507/31677290431_b4001b13e6.jpg 500w,
+		    	https://farm1.staticflickr.com/507/31677290431_b4001b13e6_z.jpg 640w,
+		    	https://farm1.staticflickr.com/507/31677290431_b4001b13e6_c.jpg 800w,
+		    	https://farm1.staticflickr.com/507/31677290431_b4001b13e6_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Gamlehaugen, Bergen" />
+		</a>
+    <h2>Gamlehaugen, Bergen</h2>
+    <p class="date">2016-07-15 20:27:51</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm6.staticflickr.com/5589/31421133440_90317f7121_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm6.staticflickr.com/5589/31421133440_90317f7121_n.jpg" 
+		  data-at-480="https://farm6.staticflickr.com/5589/31421133440_90317f7121.jpg" 
+		  data-at-640="https://farm6.staticflickr.com/5589/31421133440_90317f7121_z.jpg" 
+		  data-at-768="https://farm6.staticflickr.com/5589/31421133440_90317f7121_c.jpg" 
+		  data-at-1024="https://farm6.staticflickr.com/5589/31421133440_90317f7121_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm6.staticflickr.com/5589/31421133440_90317f7121.jpg" 
+		    	data-srcset="https://farm6.staticflickr.com/5589/31421133440_90317f7121_n.jpg 320w,
+		    	https://farm6.staticflickr.com/5589/31421133440_90317f7121.jpg 500w,
+		    	https://farm6.staticflickr.com/5589/31421133440_90317f7121_z.jpg 640w,
+		    	https://farm6.staticflickr.com/5589/31421133440_90317f7121_c.jpg 800w,
+		    	https://farm6.staticflickr.com/5589/31421133440_90317f7121_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Gamlehaugen, Bergen" />
+		</a>
+    <h2>Gamlehaugen, Bergen</h2>
+    <p class="date">2016-07-15 20:29:05</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/424/31677294441_935dc1424c_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/424/31677294441_935dc1424c_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/424/31677294441_935dc1424c.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/424/31677294441_935dc1424c_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/424/31677294441_935dc1424c_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/424/31677294441_935dc1424c_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/424/31677294441_935dc1424c.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/424/31677294441_935dc1424c_n.jpg 320w,
+		    	https://farm1.staticflickr.com/424/31677294441_935dc1424c.jpg 500w,
+		    	https://farm1.staticflickr.com/424/31677294441_935dc1424c_z.jpg 640w,
+		    	https://farm1.staticflickr.com/424/31677294441_935dc1424c_c.jpg 800w,
+		    	https://farm1.staticflickr.com/424/31677294441_935dc1424c_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Gamlehaugen, Bergen" />
+		</a>
+    <h2>Gamlehaugen, Bergen</h2>
+    <p class="date">2016-07-15 20:30:04</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/747/30952798184_39d93c902f_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/747/30952798184_39d93c902f_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/747/30952798184_39d93c902f.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/747/30952798184_39d93c902f_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/747/30952798184_39d93c902f_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/747/30952798184_39d93c902f_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/747/30952798184_39d93c902f.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/747/30952798184_39d93c902f_n.jpg 320w,
+		    	https://farm1.staticflickr.com/747/30952798184_39d93c902f.jpg 500w,
+		    	https://farm1.staticflickr.com/747/30952798184_39d93c902f_z.jpg 640w,
+		    	https://farm1.staticflickr.com/747/30952798184_39d93c902f_c.jpg 800w,
+		    	https://farm1.staticflickr.com/747/30952798184_39d93c902f_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Gamlehaugen, Bergen" />
+		</a>
+    <h2>Gamlehaugen, Bergen</h2>
+    <p class="date">2016-07-15 20:31:32</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_n.jpg" 
+		  data-at-480="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b.jpg" 
+		  data-at-640="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_z.jpg" 
+		  data-at-768="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_c.jpg" 
+		  data-at-1024="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b.jpg" 
+		    	data-srcset="https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_n.jpg 320w,
+		    	https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b.jpg 500w,
+		    	https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_z.jpg 640w,
+		    	https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_c.jpg 800w,
+		    	https://farm6.staticflickr.com/5598/30952801664_fb8de39c5b_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Evening sunshine" />
+		</a>
+    <h2>Evening sunshine</h2>
+    <p class="date">2016-07-22 22:49:52</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/704/31756520236_1447e18bc4_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/704/31756520236_1447e18bc4_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/704/31756520236_1447e18bc4.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/704/31756520236_1447e18bc4_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/704/31756520236_1447e18bc4_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/704/31756520236_1447e18bc4_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/704/31756520236_1447e18bc4.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/704/31756520236_1447e18bc4_n.jpg 320w,
+		    	https://farm1.staticflickr.com/704/31756520236_1447e18bc4.jpg 500w,
+		    	https://farm1.staticflickr.com/704/31756520236_1447e18bc4_z.jpg 640w,
+		    	https://farm1.staticflickr.com/704/31756520236_1447e18bc4_c.jpg 800w,
+		    	https://farm1.staticflickr.com/704/31756520236_1447e18bc4_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Evening sunshine" />
+		</a>
+    <h2>Evening sunshine</h2>
+    <p class="date">2016-07-22 22:50:20</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/659/31756523586_49d3facce5_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/659/31756523586_49d3facce5_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/659/31756523586_49d3facce5.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/659/31756523586_49d3facce5_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/659/31756523586_49d3facce5_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/659/31756523586_49d3facce5_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/659/31756523586_49d3facce5.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/659/31756523586_49d3facce5_n.jpg 320w,
+		    	https://farm1.staticflickr.com/659/31756523586_49d3facce5.jpg 500w,
+		    	https://farm1.staticflickr.com/659/31756523586_49d3facce5_z.jpg 640w,
+		    	https://farm1.staticflickr.com/659/31756523586_49d3facce5_c.jpg 800w,
+		    	https://farm1.staticflickr.com/659/31756523586_49d3facce5_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Bright lit evening sky" />
+		</a>
+    <h2>Bright lit evening sky</h2>
+    <p class="date">2016-07-22 22:58:24</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_n.jpg" 
+		  data-at-480="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab.jpg" 
+		  data-at-640="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_z.jpg" 
+		  data-at-768="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_c.jpg" 
+		  data-at-1024="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab.jpg" 
+		    	data-srcset="https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_n.jpg 320w,
+		    	https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab.jpg 500w,
+		    	https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_z.jpg 640w,
+		    	https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_c.jpg 800w,
+		    	https://farm6.staticflickr.com/5578/31756527096_b95f79f0ab_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="More azure skies" />
+		</a>
+    <h2>More azure skies</h2>
+    <p class="date">2016-07-22 23:00:17</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_n.jpg" 
+		  data-at-480="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f.jpg" 
+		  data-at-640="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_z.jpg" 
+		  data-at-768="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_c.jpg" 
+		  data-at-1024="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f.jpg" 
+		    	data-srcset="https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_n.jpg 320w,
+		    	https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f.jpg 500w,
+		    	https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_z.jpg 640w,
+		    	https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_c.jpg 800w,
+		    	https://farm6.staticflickr.com/5540/31756528836_fec9bc2f7f_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Evening sky from the side of Ulriken" />
+		</a>
+    <h2>Evening sky from the side of Ulriken</h2>
+    <p class="date">2016-07-22 23:01:02</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_n.jpg" 
+		  data-at-480="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791.jpg" 
+		  data-at-640="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_z.jpg" 
+		  data-at-768="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_c.jpg" 
+		  data-at-1024="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791.jpg" 
+		    	data-srcset="https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_n.jpg 320w,
+		    	https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791.jpg 500w,
+		    	https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_z.jpg 640w,
+		    	https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_c.jpg 800w,
+		    	https://farm6.staticflickr.com/5558/31646233612_dfc6ef9791_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Evening sky from the side of Ulriken" />
+		</a>
+    <h2>Evening sky from the side of Ulriken</h2>
+    <p class="date">2016-07-22 23:09:09</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/681/31793588465_df280d4c6b_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/681/31793588465_df280d4c6b_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/681/31793588465_df280d4c6b.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/681/31793588465_df280d4c6b_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/681/31793588465_df280d4c6b_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/681/31793588465_df280d4c6b_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/681/31793588465_df280d4c6b.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/681/31793588465_df280d4c6b_n.jpg 320w,
+		    	https://farm1.staticflickr.com/681/31793588465_df280d4c6b.jpg 500w,
+		    	https://farm1.staticflickr.com/681/31793588465_df280d4c6b_z.jpg 640w,
+		    	https://farm1.staticflickr.com/681/31793588465_df280d4c6b_c.jpg 800w,
+		    	https://farm1.staticflickr.com/681/31793588465_df280d4c6b_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Street art" />
+		</a>
+    <h2>Street art</h2>
+    <p class="date">2016-07-22 23:16:46</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/482/30952823174_e116df77a2_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/482/30952823174_e116df77a2_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/482/30952823174_e116df77a2.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/482/30952823174_e116df77a2_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/482/30952823174_e116df77a2_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/482/30952823174_e116df77a2_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/482/30952823174_e116df77a2.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/482/30952823174_e116df77a2_n.jpg 320w,
+		    	https://farm1.staticflickr.com/482/30952823174_e116df77a2.jpg 500w,
+		    	https://farm1.staticflickr.com/482/30952823174_e116df77a2_z.jpg 640w,
+		    	https://farm1.staticflickr.com/482/30952823174_e116df77a2_c.jpg 800w,
+		    	https://farm1.staticflickr.com/482/30952823174_e116df77a2_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Graffiti" />
+		</a>
+    <h2>Graffiti</h2>
+    <p class="date">2016-08-18 16:49:50</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/616/31646239732_9407eeb622_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/616/31646239732_9407eeb622_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/616/31646239732_9407eeb622.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/616/31646239732_9407eeb622_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/616/31646239732_9407eeb622_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/616/31646239732_9407eeb622_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/616/31646239732_9407eeb622.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/616/31646239732_9407eeb622_n.jpg 320w,
+		    	https://farm1.staticflickr.com/616/31646239732_9407eeb622.jpg 500w,
+		    	https://farm1.staticflickr.com/616/31646239732_9407eeb622_z.jpg 640w,
+		    	https://farm1.staticflickr.com/616/31646239732_9407eeb622_c.jpg 800w,
+		    	https://farm1.staticflickr.com/616/31646239732_9407eeb622_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Railway remains" />
+		</a>
+    <h2>Railway remains</h2>
+    <p class="date">2016-08-18 16:52:37</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/769/30952828884_6a16db0e42_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/769/30952828884_6a16db0e42_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/769/30952828884_6a16db0e42.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/769/30952828884_6a16db0e42_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/769/30952828884_6a16db0e42_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/769/30952828884_6a16db0e42_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/769/30952828884_6a16db0e42.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/769/30952828884_6a16db0e42_n.jpg 320w,
+		    	https://farm1.staticflickr.com/769/30952828884_6a16db0e42.jpg 500w,
+		    	https://farm1.staticflickr.com/769/30952828884_6a16db0e42_z.jpg 640w,
+		    	https://farm1.staticflickr.com/769/30952828884_6a16db0e42_c.jpg 800w,
+		    	https://farm1.staticflickr.com/769/30952828884_6a16db0e42_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Hall by Høgskolen i Bergen" />
+		</a>
+    <h2>Hall by Høgskolen i Bergen</h2>
+    <p class="date">2016-08-18 16:53:04</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/680/30952831894_cb380606af_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/680/30952831894_cb380606af_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/680/30952831894_cb380606af.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/680/30952831894_cb380606af_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/680/30952831894_cb380606af_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/680/30952831894_cb380606af_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/680/30952831894_cb380606af.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/680/30952831894_cb380606af_n.jpg 320w,
+		    	https://farm1.staticflickr.com/680/30952831894_cb380606af.jpg 500w,
+		    	https://farm1.staticflickr.com/680/30952831894_cb380606af_z.jpg 640w,
+		    	https://farm1.staticflickr.com/680/30952831894_cb380606af_c.jpg 800w,
+		    	https://farm1.staticflickr.com/680/30952831894_cb380606af_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Hall by Høgskolen i Bergen" />
+		</a>
+    <h2>Hall by Høgskolen i Bergen</h2>
+    <p class="date">2016-08-18 16:53:24</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/370/31756548446_693a669517_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/370/31756548446_693a669517_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/370/31756548446_693a669517.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/370/31756548446_693a669517_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/370/31756548446_693a669517_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/370/31756548446_693a669517_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/370/31756548446_693a669517.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/370/31756548446_693a669517_n.jpg 320w,
+		    	https://farm1.staticflickr.com/370/31756548446_693a669517.jpg 500w,
+		    	https://farm1.staticflickr.com/370/31756548446_693a669517_z.jpg 640w,
+		    	https://farm1.staticflickr.com/370/31756548446_693a669517_c.jpg 800w,
+		    	https://farm1.staticflickr.com/370/31756548446_693a669517_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Basejumpers off Ulriken" />
+		</a>
+    <h2>Basejumpers off Ulriken</h2>
+    <p class="date">2016-08-18 16:54:01</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_n.jpg 320w,
+		    	https://farm1.staticflickr.com/496/31756551056_2e8a5805f6.jpg 500w,
+		    	https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_z.jpg 640w,
+		    	https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_c.jpg 800w,
+		    	https://farm1.staticflickr.com/496/31756551056_2e8a5805f6_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Basejumper" />
+		</a>
+    <h2>Basejumper</h2>
+    <p class="date">2016-08-18 16:55:59</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/599/31646247072_43d8c79110_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/599/31646247072_43d8c79110_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/599/31646247072_43d8c79110.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/599/31646247072_43d8c79110_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/599/31646247072_43d8c79110_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/599/31646247072_43d8c79110_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/599/31646247072_43d8c79110.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/599/31646247072_43d8c79110_n.jpg 320w,
+		    	https://farm1.staticflickr.com/599/31646247072_43d8c79110.jpg 500w,
+		    	https://farm1.staticflickr.com/599/31646247072_43d8c79110_z.jpg 640w,
+		    	https://farm1.staticflickr.com/599/31646247072_43d8c79110_c.jpg 800w,
+		    	https://farm1.staticflickr.com/599/31646247072_43d8c79110_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Sun over Ulriken" />
+		</a>
+    <h2>Sun over Ulriken</h2>
+    <p class="date">2016-08-18 17:05:57</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_n.jpg 320w,
+		    	https://farm1.staticflickr.com/580/31756555106_72cd8e27ee.jpg 500w,
+		    	https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_z.jpg 640w,
+		    	https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_c.jpg 800w,
+		    	https://farm1.staticflickr.com/580/31756555106_72cd8e27ee_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Buss going past Løvstakken" />
+		</a>
+    <h2>Buss going past Løvstakken</h2>
+    <p class="date">2016-09-23 18:28:26</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/449/31421171470_c8d6df976f_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/449/31421171470_c8d6df976f_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/449/31421171470_c8d6df976f.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/449/31421171470_c8d6df976f_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/449/31421171470_c8d6df976f_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/449/31421171470_c8d6df976f_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/449/31421171470_c8d6df976f.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/449/31421171470_c8d6df976f_n.jpg 320w,
+		    	https://farm1.staticflickr.com/449/31421171470_c8d6df976f.jpg 500w,
+		    	https://farm1.staticflickr.com/449/31421171470_c8d6df976f_z.jpg 640w,
+		    	https://farm1.staticflickr.com/449/31421171470_c8d6df976f_c.jpg 800w,
+		    	https://farm1.staticflickr.com/449/31421171470_c8d6df976f_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Fløien seen from Løvstakken" />
+		</a>
+    <h2>Fløien seen from Løvstakken</h2>
+    <p class="date">2016-09-23 18:49:48</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/636/31677355681_64812682fb_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/636/31677355681_64812682fb_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/636/31677355681_64812682fb.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/636/31677355681_64812682fb_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/636/31677355681_64812682fb_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/636/31677355681_64812682fb_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/636/31677355681_64812682fb.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/636/31677355681_64812682fb_n.jpg 320w,
+		    	https://farm1.staticflickr.com/636/31677355681_64812682fb.jpg 500w,
+		    	https://farm1.staticflickr.com/636/31677355681_64812682fb_z.jpg 640w,
+		    	https://farm1.staticflickr.com/636/31677355681_64812682fb_c.jpg 800w,
+		    	https://farm1.staticflickr.com/636/31677355681_64812682fb_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="War memorial" />
+		</a>
+    <h2>War memorial</h2>
+    <p class="date">2016-09-23 19:17:23</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/517/30952849844_48d1a34c35_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/517/30952849844_48d1a34c35_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/517/30952849844_48d1a34c35.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/517/30952849844_48d1a34c35_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/517/30952849844_48d1a34c35_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/517/30952849844_48d1a34c35_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/517/30952849844_48d1a34c35.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/517/30952849844_48d1a34c35_n.jpg 320w,
+		    	https://farm1.staticflickr.com/517/30952849844_48d1a34c35.jpg 500w,
+		    	https://farm1.staticflickr.com/517/30952849844_48d1a34c35_z.jpg 640w,
+		    	https://farm1.staticflickr.com/517/30952849844_48d1a34c35_c.jpg 800w,
+		    	https://farm1.staticflickr.com/517/30952849844_48d1a34c35_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="War memorial" />
+		</a>
+    <h2>War memorial</h2>
+    <p class="date">2016-09-23 19:17:36</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_n.jpg 320w,
+		    	https://farm1.staticflickr.com/509/30952853014_b7cc6525f4.jpg 500w,
+		    	https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_z.jpg 640w,
+		    	https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_c.jpg 800w,
+		    	https://farm1.staticflickr.com/509/30952853014_b7cc6525f4_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="War memorial" />
+		</a>
+    <h2>War memorial</h2>
+    <p class="date">2016-09-23 19:18:29</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/770/31677366901_8c6fe30748_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/770/31677366901_8c6fe30748_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/770/31677366901_8c6fe30748.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/770/31677366901_8c6fe30748_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/770/31677366901_8c6fe30748_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/770/31677366901_8c6fe30748_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/770/31677366901_8c6fe30748.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/770/31677366901_8c6fe30748_n.jpg 320w,
+		    	https://farm1.staticflickr.com/770/31677366901_8c6fe30748.jpg 500w,
+		    	https://farm1.staticflickr.com/770/31677366901_8c6fe30748_z.jpg 640w,
+		    	https://farm1.staticflickr.com/770/31677366901_8c6fe30748_c.jpg 800w,
+		    	https://farm1.staticflickr.com/770/31677366901_8c6fe30748_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="War memorial" />
+		</a>
+    <h2>War memorial</h2>
+    <p class="date">2016-09-23 19:19:15</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/729/31756573686_70912cd5e4_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/729/31756573686_70912cd5e4_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/729/31756573686_70912cd5e4.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/729/31756573686_70912cd5e4_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/729/31756573686_70912cd5e4_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/729/31756573686_70912cd5e4_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/729/31756573686_70912cd5e4.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/729/31756573686_70912cd5e4_n.jpg 320w,
+		    	https://farm1.staticflickr.com/729/31756573686_70912cd5e4.jpg 500w,
+		    	https://farm1.staticflickr.com/729/31756573686_70912cd5e4_z.jpg 640w,
+		    	https://farm1.staticflickr.com/729/31756573686_70912cd5e4_c.jpg 800w,
+		    	https://farm1.staticflickr.com/729/31756573686_70912cd5e4_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="War memorial" />
+		</a>
+    <h2>War memorial</h2>
+    <p class="date">2016-09-23 19:20:51</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/371/31677371421_b25c8476ff_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/371/31677371421_b25c8476ff_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/371/31677371421_b25c8476ff.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/371/31677371421_b25c8476ff_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/371/31677371421_b25c8476ff_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/371/31677371421_b25c8476ff_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/371/31677371421_b25c8476ff.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/371/31677371421_b25c8476ff_n.jpg 320w,
+		    	https://farm1.staticflickr.com/371/31677371421_b25c8476ff.jpg 500w,
+		    	https://farm1.staticflickr.com/371/31677371421_b25c8476ff_z.jpg 640w,
+		    	https://farm1.staticflickr.com/371/31677371421_b25c8476ff_c.jpg 800w,
+		    	https://farm1.staticflickr.com/371/31677371421_b25c8476ff_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Horizon over Puddefjorden" />
+		</a>
+    <h2>Horizon over Puddefjorden</h2>
+    <p class="date">2016-10-09 19:03:37</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/417/31756579546_8cc69f82de_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/417/31756579546_8cc69f82de_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/417/31756579546_8cc69f82de.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/417/31756579546_8cc69f82de_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/417/31756579546_8cc69f82de_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/417/31756579546_8cc69f82de_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/417/31756579546_8cc69f82de.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/417/31756579546_8cc69f82de_n.jpg 320w,
+		    	https://farm1.staticflickr.com/417/31756579546_8cc69f82de.jpg 500w,
+		    	https://farm1.staticflickr.com/417/31756579546_8cc69f82de_z.jpg 640w,
+		    	https://farm1.staticflickr.com/417/31756579546_8cc69f82de_c.jpg 800w,
+		    	https://farm1.staticflickr.com/417/31756579546_8cc69f82de_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Pier by Puddefjorden" />
+		</a>
+    <h2>Pier by Puddefjorden</h2>
+    <p class="date">2016-10-09 19:04:14</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/466/31793639545_56c60dea54_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/466/31793639545_56c60dea54_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/466/31793639545_56c60dea54.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/466/31793639545_56c60dea54_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/466/31793639545_56c60dea54_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/466/31793639545_56c60dea54_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/466/31793639545_56c60dea54.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/466/31793639545_56c60dea54_n.jpg 320w,
+		    	https://farm1.staticflickr.com/466/31793639545_56c60dea54.jpg 500w,
+		    	https://farm1.staticflickr.com/466/31793639545_56c60dea54_z.jpg 640w,
+		    	https://farm1.staticflickr.com/466/31793639545_56c60dea54_c.jpg 800w,
+		    	https://farm1.staticflickr.com/466/31793639545_56c60dea54_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Pier by Puddefjorden" />
+		</a>
+    <h2>Pier by Puddefjorden</h2>
+    <p class="date">2016-10-09 19:04:24</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/610/31646277482_b79a437e78_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/610/31646277482_b79a437e78_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/610/31646277482_b79a437e78.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/610/31646277482_b79a437e78_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/610/31646277482_b79a437e78_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/610/31646277482_b79a437e78_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/610/31646277482_b79a437e78.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/610/31646277482_b79a437e78_n.jpg 320w,
+		    	https://farm1.staticflickr.com/610/31646277482_b79a437e78.jpg 500w,
+		    	https://farm1.staticflickr.com/610/31646277482_b79a437e78_z.jpg 640w,
+		    	https://farm1.staticflickr.com/610/31646277482_b79a437e78_c.jpg 800w,
+		    	https://farm1.staticflickr.com/610/31646277482_b79a437e78_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Horizon over Puddefjorden pier" />
+		</a>
+    <h2>Horizon over Puddefjorden pier</h2>
+    <p class="date">2016-10-09 19:07:24</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/586/31793644045_d12831d567_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/586/31793644045_d12831d567_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/586/31793644045_d12831d567.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/586/31793644045_d12831d567_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/586/31793644045_d12831d567_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/586/31793644045_d12831d567_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/586/31793644045_d12831d567.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/586/31793644045_d12831d567_n.jpg 320w,
+		    	https://farm1.staticflickr.com/586/31793644045_d12831d567.jpg 500w,
+		    	https://farm1.staticflickr.com/586/31793644045_d12831d567_z.jpg 640w,
+		    	https://farm1.staticflickr.com/586/31793644045_d12831d567_c.jpg 800w,
+		    	https://farm1.staticflickr.com/586/31793644045_d12831d567_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Solheimsviken Bay leading to Puddefjorden" />
+		</a>
+    <h2>Solheimsviken Bay leading to Puddefjorden</h2>
+    <p class="date">2016-10-09 19:07:55</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/762/31756593036_e5a245ffae_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/762/31756593036_e5a245ffae.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/762/31756593036_e5a245ffae_c.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/762/31756593036_e5a245ffae_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/762/31756593036_e5a245ffae_c.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/762/31756593036_e5a245ffae.jpg 334w,
+		    	https://farm1.staticflickr.com/762/31756593036_e5a245ffae_z.jpg 428w,
+		    	https://farm1.staticflickr.com/762/31756593036_e5a245ffae_c.jpg 535w,
+		    	https://farm1.staticflickr.com/762/31756593036_e5a245ffae_b.jpg 685w"
+  				
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Sidewalk by Solheimsviken Bay" />
+		</a>
+    <h2>Sidewalk by Solheimsviken Bay</h2>
+    <p class="date">2016-10-09 19:08:41</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/400/31677384221_83189d0e81_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/400/31677384221_83189d0e81_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/400/31677384221_83189d0e81.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/400/31677384221_83189d0e81_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/400/31677384221_83189d0e81_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/400/31677384221_83189d0e81_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/400/31677384221_83189d0e81.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/400/31677384221_83189d0e81_n.jpg 320w,
+		    	https://farm1.staticflickr.com/400/31677384221_83189d0e81.jpg 500w,
+		    	https://farm1.staticflickr.com/400/31677384221_83189d0e81_z.jpg 640w,
+		    	https://farm1.staticflickr.com/400/31677384221_83189d0e81_c.jpg 800w,
+		    	https://farm1.staticflickr.com/400/31677384221_83189d0e81_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Solheimsviken Bay leading to Puddefjorden" />
+		</a>
+    <h2>Solheimsviken Bay leading to Puddefjorden</h2>
+    <p class="date">2016-10-09 19:11:50</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/635/31677387051_d4080f2eab_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/635/31677387051_d4080f2eab_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/635/31677387051_d4080f2eab.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/635/31677387051_d4080f2eab_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/635/31677387051_d4080f2eab_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/635/31677387051_d4080f2eab_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/635/31677387051_d4080f2eab.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/635/31677387051_d4080f2eab_n.jpg 320w,
+		    	https://farm1.staticflickr.com/635/31677387051_d4080f2eab.jpg 500w,
+		    	https://farm1.staticflickr.com/635/31677387051_d4080f2eab_z.jpg 640w,
+		    	https://farm1.staticflickr.com/635/31677387051_d4080f2eab_c.jpg 800w,
+		    	https://farm1.staticflickr.com/635/31677387051_d4080f2eab_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Solheimsviken Bay leading to Puddefjorden" />
+		</a>
+    <h2>Solheimsviken Bay leading to Puddefjorden</h2>
+    <p class="date">2016-10-09 19:12:02</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/601/31756604566_60b7d14314_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/601/31756604566_60b7d14314_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/601/31756604566_60b7d14314.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/601/31756604566_60b7d14314_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/601/31756604566_60b7d14314_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/601/31756604566_60b7d14314_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/601/31756604566_60b7d14314.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/601/31756604566_60b7d14314_n.jpg 320w,
+		    	https://farm1.staticflickr.com/601/31756604566_60b7d14314.jpg 500w,
+		    	https://farm1.staticflickr.com/601/31756604566_60b7d14314_z.jpg 640w,
+		    	https://farm1.staticflickr.com/601/31756604566_60b7d14314_c.jpg 800w,
+		    	https://farm1.staticflickr.com/601/31756604566_60b7d14314_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Solheimsviken Bay leading to Puddefjorden" />
+		</a>
+    <h2>Solheimsviken Bay leading to Puddefjorden</h2>
+    <p class="date">2016-10-09 19:13:51</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/593/31646294632_52c60851c4_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/593/31646294632_52c60851c4_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/593/31646294632_52c60851c4.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/593/31646294632_52c60851c4_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/593/31646294632_52c60851c4_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/593/31646294632_52c60851c4_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/593/31646294632_52c60851c4.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/593/31646294632_52c60851c4_n.jpg 320w,
+		    	https://farm1.staticflickr.com/593/31646294632_52c60851c4.jpg 500w,
+		    	https://farm1.staticflickr.com/593/31646294632_52c60851c4_z.jpg 640w,
+		    	https://farm1.staticflickr.com/593/31646294632_52c60851c4_c.jpg 800w,
+		    	https://farm1.staticflickr.com/593/31646294632_52c60851c4_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Walk- and bicycle-path over Puddefjorden" />
+		</a>
+    <h2>Walk- and bicycle-path over Puddefjorden</h2>
+    <p class="date">2016-10-09 19:24:24</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/438/31756610706_93723e85b5_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/438/31756610706_93723e85b5_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/438/31756610706_93723e85b5.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/438/31756610706_93723e85b5_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/438/31756610706_93723e85b5_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/438/31756610706_93723e85b5_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/438/31756610706_93723e85b5.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/438/31756610706_93723e85b5_n.jpg 320w,
+		    	https://farm1.staticflickr.com/438/31756610706_93723e85b5.jpg 500w,
+		    	https://farm1.staticflickr.com/438/31756610706_93723e85b5_z.jpg 640w,
+		    	https://farm1.staticflickr.com/438/31756610706_93723e85b5_c.jpg 800w,
+		    	https://farm1.staticflickr.com/438/31756610706_93723e85b5_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Horizon over Puddefjorden" />
+		</a>
+    <h2>Horizon over Puddefjorden</h2>
+    <p class="date">2016-10-09 19:27:27</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/506/30984090273_1e76147420_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/506/30984090273_1e76147420_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/506/30984090273_1e76147420.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/506/30984090273_1e76147420_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/506/30984090273_1e76147420_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/506/30984090273_1e76147420_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/506/30984090273_1e76147420.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/506/30984090273_1e76147420_n.jpg 320w,
+		    	https://farm1.staticflickr.com/506/30984090273_1e76147420.jpg 500w,
+		    	https://farm1.staticflickr.com/506/30984090273_1e76147420_z.jpg 640w,
+		    	https://farm1.staticflickr.com/506/30984090273_1e76147420_c.jpg 800w,
+		    	https://farm1.staticflickr.com/506/30984090273_1e76147420_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Building by VilVite-senteret" />
+		</a>
+    <h2>Building by VilVite-senteret</h2>
+    <p class="date">2016-10-09 19:31:00</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/352/31756614106_041d2eae4b_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/352/31756614106_041d2eae4b_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/352/31756614106_041d2eae4b.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/352/31756614106_041d2eae4b_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/352/31756614106_041d2eae4b_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/352/31756614106_041d2eae4b_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/352/31756614106_041d2eae4b.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/352/31756614106_041d2eae4b_n.jpg 320w,
+		    	https://farm1.staticflickr.com/352/31756614106_041d2eae4b.jpg 500w,
+		    	https://farm1.staticflickr.com/352/31756614106_041d2eae4b_z.jpg 640w,
+		    	https://farm1.staticflickr.com/352/31756614106_041d2eae4b_c.jpg 800w,
+		    	https://farm1.staticflickr.com/352/31756614106_041d2eae4b_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 13:02:10</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/565/31677398221_4a36f264b7_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/565/31677398221_4a36f264b7_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/565/31677398221_4a36f264b7.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/565/31677398221_4a36f264b7_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/565/31677398221_4a36f264b7_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/565/31677398221_4a36f264b7_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/565/31677398221_4a36f264b7.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/565/31677398221_4a36f264b7_n.jpg 320w,
+		    	https://farm1.staticflickr.com/565/31677398221_4a36f264b7.jpg 500w,
+		    	https://farm1.staticflickr.com/565/31677398221_4a36f264b7_z.jpg 640w,
+		    	https://farm1.staticflickr.com/565/31677398221_4a36f264b7_c.jpg 800w,
+		    	https://farm1.staticflickr.com/565/31677398221_4a36f264b7_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 13:03:57</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/769/31756618566_95fc6743ea_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/769/31756618566_95fc6743ea_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/769/31756618566_95fc6743ea.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/769/31756618566_95fc6743ea_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/769/31756618566_95fc6743ea_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/769/31756618566_95fc6743ea_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/769/31756618566_95fc6743ea.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/769/31756618566_95fc6743ea_n.jpg 320w,
+		    	https://farm1.staticflickr.com/769/31756618566_95fc6743ea.jpg 500w,
+		    	https://farm1.staticflickr.com/769/31756618566_95fc6743ea_z.jpg 640w,
+		    	https://farm1.staticflickr.com/769/31756618566_95fc6743ea_c.jpg 800w,
+		    	https://farm1.staticflickr.com/769/31756618566_95fc6743ea_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:35:58</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_n.jpg 320w,
+		    	https://farm1.staticflickr.com/536/31756620786_e98ddbfc26.jpg 500w,
+		    	https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_z.jpg 640w,
+		    	https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_c.jpg 800w,
+		    	https://farm1.staticflickr.com/536/31756620786_e98ddbfc26_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:36:14</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/775/31756622246_259174020f_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/775/31756622246_259174020f_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/775/31756622246_259174020f.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/775/31756622246_259174020f_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/775/31756622246_259174020f_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/775/31756622246_259174020f_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/775/31756622246_259174020f.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/775/31756622246_259174020f_n.jpg 320w,
+		    	https://farm1.staticflickr.com/775/31756622246_259174020f.jpg 500w,
+		    	https://farm1.staticflickr.com/775/31756622246_259174020f_z.jpg 640w,
+		    	https://farm1.staticflickr.com/775/31756622246_259174020f_c.jpg 800w,
+		    	https://farm1.staticflickr.com/775/31756622246_259174020f_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:36:27</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/344/31756624696_616df652eb_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/344/31756624696_616df652eb_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/344/31756624696_616df652eb.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/344/31756624696_616df652eb_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/344/31756624696_616df652eb_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/344/31756624696_616df652eb_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/344/31756624696_616df652eb.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/344/31756624696_616df652eb_n.jpg 320w,
+		    	https://farm1.staticflickr.com/344/31756624696_616df652eb.jpg 500w,
+		    	https://farm1.staticflickr.com/344/31756624696_616df652eb_z.jpg 640w,
+		    	https://farm1.staticflickr.com/344/31756624696_616df652eb_c.jpg 800w,
+		    	https://farm1.staticflickr.com/344/31756624696_616df652eb_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:36:45</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_n.jpg 320w,
+		    	https://farm1.staticflickr.com/331/31793678545_77c4ef94c1.jpg 500w,
+		    	https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_z.jpg 640w,
+		    	https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_c.jpg 800w,
+		    	https://farm1.staticflickr.com/331/31793678545_77c4ef94c1_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:52:28</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_n.jpg 320w,
+		    	https://farm1.staticflickr.com/418/31756629676_4ed95c94e6.jpg 500w,
+		    	https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_z.jpg 640w,
+		    	https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_c.jpg 800w,
+		    	https://farm1.staticflickr.com/418/31756629676_4ed95c94e6_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:53:12</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_n.jpg 320w,
+		    	https://farm1.staticflickr.com/504/30952888174_7fd2c8c310.jpg 500w,
+		    	https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_z.jpg 640w,
+		    	https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_c.jpg 800w,
+		    	https://farm1.staticflickr.com/504/30952888174_7fd2c8c310_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:53:46</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/566/31421127450_3c9d33e090_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/566/31421127450_3c9d33e090_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/566/31421127450_3c9d33e090.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/566/31421127450_3c9d33e090_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/566/31421127450_3c9d33e090_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/566/31421127450_3c9d33e090_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/566/31421127450_3c9d33e090.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/566/31421127450_3c9d33e090_n.jpg 320w,
+		    	https://farm1.staticflickr.com/566/31421127450_3c9d33e090.jpg 500w,
+		    	https://farm1.staticflickr.com/566/31421127450_3c9d33e090_z.jpg 640w,
+		    	https://farm1.staticflickr.com/566/31421127450_3c9d33e090_c.jpg 800w,
+		    	https://farm1.staticflickr.com/566/31421127450_3c9d33e090_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="River somewhere between Bergen and Voss" />
+		</a>
+    <h2>River somewhere between Bergen and Voss</h2>
+    <p class="date">2016-12-13 14:53:55</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/632/31756494446_efc42f2a98_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/632/31756494446_efc42f2a98_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/632/31756494446_efc42f2a98.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/632/31756494446_efc42f2a98_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/632/31756494446_efc42f2a98_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/632/31756494446_efc42f2a98_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/632/31756494446_efc42f2a98.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/632/31756494446_efc42f2a98_n.jpg 320w,
+		    	https://farm1.staticflickr.com/632/31756494446_efc42f2a98.jpg 500w,
+		    	https://farm1.staticflickr.com/632/31756494446_efc42f2a98_z.jpg 640w,
+		    	https://farm1.staticflickr.com/632/31756494446_efc42f2a98_c.jpg 800w,
+		    	https://farm1.staticflickr.com/632/31756494446_efc42f2a98_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 15:46:38</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/342/31677282161_a704a13867_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/342/31677282161_a704a13867_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/342/31677282161_a704a13867.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/342/31677282161_a704a13867_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/342/31677282161_a704a13867_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/342/31677282161_a704a13867_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/342/31677282161_a704a13867.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/342/31677282161_a704a13867_n.jpg 320w,
+		    	https://farm1.staticflickr.com/342/31677282161_a704a13867.jpg 500w,
+		    	https://farm1.staticflickr.com/342/31677282161_a704a13867_z.jpg 640w,
+		    	https://farm1.staticflickr.com/342/31677282161_a704a13867_c.jpg 800w,
+		    	https://farm1.staticflickr.com/342/31677282161_a704a13867_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Hut on a mountain, somewhere between Bergen and Voss" />
+		</a>
+    <h2>Hut on a mountain, somewhere between Bergen and Voss</h2>
+    <p class="date">2016-12-13 15:46:07</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/592/31421123230_4769363256_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/592/31421123230_4769363256_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/592/31421123230_4769363256.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/592/31421123230_4769363256_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/592/31421123230_4769363256_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/592/31421123230_4769363256_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/592/31421123230_4769363256.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/592/31421123230_4769363256_n.jpg 320w,
+		    	https://farm1.staticflickr.com/592/31421123230_4769363256.jpg 500w,
+		    	https://farm1.staticflickr.com/592/31421123230_4769363256_z.jpg 640w,
+		    	https://farm1.staticflickr.com/592/31421123230_4769363256_c.jpg 800w,
+		    	https://farm1.staticflickr.com/592/31421123230_4769363256_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 15:45:49</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm1.staticflickr.com/674/31756499486_779dc3459e_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm1.staticflickr.com/674/31756499486_779dc3459e_n.jpg" 
+		  data-at-480="https://farm1.staticflickr.com/674/31756499486_779dc3459e.jpg" 
+		  data-at-640="https://farm1.staticflickr.com/674/31756499486_779dc3459e_z.jpg" 
+		  data-at-768="https://farm1.staticflickr.com/674/31756499486_779dc3459e_c.jpg" 
+		  data-at-1024="https://farm1.staticflickr.com/674/31756499486_779dc3459e_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm1.staticflickr.com/674/31756499486_779dc3459e.jpg" 
+		    	data-srcset="https://farm1.staticflickr.com/674/31756499486_779dc3459e_n.jpg 320w,
+		    	https://farm1.staticflickr.com/674/31756499486_779dc3459e.jpg 500w,
+		    	https://farm1.staticflickr.com/674/31756499486_779dc3459e_z.jpg 640w,
+		    	https://farm1.staticflickr.com/674/31756499486_779dc3459e_c.jpg 800w,
+		    	https://farm1.staticflickr.com/674/31756499486_779dc3459e_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View of mountain between Bergen and Voss" />
+		</a>
+    <h2>View of mountain between Bergen and Voss</h2>
+    <p class="date">2016-12-13 15:45:42</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82.jpg 500w,
+		    	https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7676/28272665766_d8f2cdfd82_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Crane at Kronstad" />
+		</a>
+    <h2>Crane at Kronstad</h2>
+    <p class="date">2016-06-28 22:51:36</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8810/27691199743_b69d272706_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8810/27691199743_b69d272706.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8810/27691199743_b69d272706_c.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8810/27691199743_b69d272706_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8810/27691199743_b69d272706_c.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8810/27691199743_b69d272706.jpg 334w,
+		    	https://farm9.staticflickr.com/8810/27691199743_b69d272706_z.jpg 428w,
+		    	https://farm9.staticflickr.com/8810/27691199743_b69d272706_c.jpg 535w,
+		    	https://farm9.staticflickr.com/8810/27691199743_b69d272706_b.jpg 685w"
+  				
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Høyskolen i Bergen Facade" />
+		</a>
+    <h2>Høyskolen i Bergen Facade</h2>
+    <p class="date">2016-06-28 22:50:28</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_c.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_c.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0.jpg 334w,
+		    	https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_z.jpg 428w,
+		    	https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_c.jpg 535w,
+		    	https://farm9.staticflickr.com/8882/27691200603_54b1e87ae0_b.jpg 685w"
+  				
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Høyskolen i Bergen Facade" />
+		</a>
+    <h2>Høyskolen i Bergen Facade</h2>
+    <p class="date">2016-06-28 22:49:44</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8689/28306900215_71aae26d2a.jpg 500w,
+		    	https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8689/28306900215_71aae26d2a_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View from Årstad" />
+		</a>
+    <h2>View from Årstad</h2>
+    <p class="date">2016-06-28 22:33:01</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8838/28025172590_6804d06dbd.jpg 500w,
+		    	https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8838/28025172590_6804d06dbd_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View from Årstad" />
+		</a>
+    <h2>View from Årstad</h2>
+    <p class="date">2016-06-28 22:32:36</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7479/28025173810_84f94c6e67.jpg 500w,
+		    	https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7479/28025173810_84f94c6e67_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View from Årstad" />
+		</a>
+    <h2>View from Årstad</h2>
+    <p class="date">2016-06-28 22:32:17</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8840/28025174800_1d7380dded_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8840/28025174800_1d7380dded_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8840/28025174800_1d7380dded.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8840/28025174800_1d7380dded_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8840/28025174800_1d7380dded_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8840/28025174800_1d7380dded_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8840/28025174800_1d7380dded.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8840/28025174800_1d7380dded_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8840/28025174800_1d7380dded.jpg 500w,
+		    	https://farm9.staticflickr.com/8840/28025174800_1d7380dded_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8840/28025174800_1d7380dded_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8840/28025174800_1d7380dded_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Behind Brann Stadion" />
+		</a>
+    <h2>Behind Brann Stadion</h2>
+    <p class="date">2016-06-28 22:23:13</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8860/28025175840_ca57e5f135.jpg 500w,
+		    	https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8860/28025175840_ca57e5f135_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Behind Brann Stadion" />
+		</a>
+    <h2>Behind Brann Stadion</h2>
+    <p class="date">2016-06-28 22:23:06</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8624/27690585694_a25b1f6422.jpg 500w,
+		    	https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8624/27690585694_a25b1f6422_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Behind Brann Stadion" />
+		</a>
+    <h2>Behind Brann Stadion</h2>
+    <p class="date">2016-06-28 22:23:03</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb.jpg 500w,
+		    	https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8567/28025179480_eb699d8ebb_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Behind Brann Stadion" />
+		</a>
+    <h2>Behind Brann Stadion</h2>
+    <p class="date">2016-06-28 22:22:49</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7289/28202760632_eedb56d407_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7289/28202760632_eedb56d407_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7289/28202760632_eedb56d407.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7289/28202760632_eedb56d407_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7289/28202760632_eedb56d407_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7289/28202760632_eedb56d407_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7289/28202760632_eedb56d407.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7289/28202760632_eedb56d407_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7289/28202760632_eedb56d407.jpg 500w,
+		    	https://farm8.staticflickr.com/7289/28202760632_eedb56d407_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7289/28202760632_eedb56d407_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7289/28202760632_eedb56d407_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Behind Brann Stadion" />
+		</a>
+    <h2>Behind Brann Stadion</h2>
+    <p class="date">2016-06-28 22:22:44</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24.jpg 500w,
+		    	https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8816/27691204273_f4ef28cb24_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Ulriken" />
+		</a>
+    <h2>Ulriken</h2>
+    <p class="date">2016-06-28 22:13:36</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8846/27691208053_452c0a0e54.jpg 500w,
+		    	https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8846/27691208053_452c0a0e54_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Puddefjordsbroen" />
+		</a>
+    <h2>Puddefjordsbroen</h2>
+    <p class="date">2016-03-17 18:19:25</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8615/27690603874_63df24d08e_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8615/27690603874_63df24d08e_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8615/27690603874_63df24d08e.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8615/27690603874_63df24d08e_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8615/27690603874_63df24d08e_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8615/27690603874_63df24d08e_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8615/27690603874_63df24d08e.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8615/27690603874_63df24d08e_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8615/27690603874_63df24d08e.jpg 500w,
+		    	https://farm9.staticflickr.com/8615/27690603874_63df24d08e_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8615/27690603874_63df24d08e_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8615/27690603874_63df24d08e_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Puddefjordsbroen" />
+		</a>
+    <h2>Puddefjordsbroen</h2>
+    <p class="date">2016-03-17 18:19:05</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7697/28202773492_61698e05be_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7697/28202773492_61698e05be_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7697/28202773492_61698e05be.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7697/28202773492_61698e05be_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7697/28202773492_61698e05be_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7697/28202773492_61698e05be_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7697/28202773492_61698e05be.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7697/28202773492_61698e05be_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7697/28202773492_61698e05be.jpg 500w,
+		    	https://farm8.staticflickr.com/7697/28202773492_61698e05be_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7697/28202773492_61698e05be_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7697/28202773492_61698e05be_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Handelshøyskolen BI" />
+		</a>
+    <h2>Handelshøyskolen BI</h2>
+    <p class="date">2016-03-17 18:18:12</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7.jpg 500w,
+		    	https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7288/28202776552_9bf294f1d7_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Handelshøyskolen BI" />
+		</a>
+    <h2>Handelshøyskolen BI</h2>
+    <p class="date">2016-03-17 18:18:09</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8576/28202780092_e3ec6de837.jpg 500w,
+		    	https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8576/28202780092_e3ec6de837_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Handelshøyskolen BI" />
+		</a>
+    <h2>Handelshøyskolen BI</h2>
+    <p class="date">2016-03-17 18:18:02</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3.jpg 500w,
+		    	https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8876/28202784542_5ef48f08b3_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Småpudden" />
+		</a>
+    <h2>Småpudden</h2>
+    <p class="date">2016-03-17 18:17:35</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8579/27691234403_d00503328e_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8579/27691234403_d00503328e_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8579/27691234403_d00503328e.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8579/27691234403_d00503328e_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8579/27691234403_d00503328e_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8579/27691234403_d00503328e_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8579/27691234403_d00503328e.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8579/27691234403_d00503328e_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8579/27691234403_d00503328e.jpg 500w,
+		    	https://farm9.staticflickr.com/8579/27691234403_d00503328e_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8579/27691234403_d00503328e_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8579/27691234403_d00503328e_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Industrial Building, Damsgård" />
+		</a>
+    <h2>Industrial Building, Damsgård</h2>
+    <p class="date">2016-03-17 18:14:55</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7304/28202790542_e1186fb414_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7304/28202790542_e1186fb414_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7304/28202790542_e1186fb414.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7304/28202790542_e1186fb414_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7304/28202790542_e1186fb414_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7304/28202790542_e1186fb414_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7304/28202790542_e1186fb414.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7304/28202790542_e1186fb414_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7304/28202790542_e1186fb414.jpg 500w,
+		    	https://farm8.staticflickr.com/7304/28202790542_e1186fb414_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7304/28202790542_e1186fb414_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7304/28202790542_e1186fb414_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Industrial Building, Damsgård" />
+		</a>
+    <h2>Industrial Building, Damsgård</h2>
+    <p class="date">2016-03-17 18:14:34</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7300/27690619324_a68b0f760e.jpg 500w,
+		    	https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7300/27690619324_a68b0f760e_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Industrial Building, Damsgård" />
+		</a>
+    <h2>Industrial Building, Damsgård</h2>
+    <p class="date">2016-03-17 18:14:25</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7577/27690620314_3c842d8acb.jpg 500w,
+		    	https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7577/27690620314_3c842d8acb_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View from Damsgård Pier" />
+		</a>
+    <h2>View from Damsgård Pier</h2>
+    <p class="date">2016-03-17 18:10:32</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8899/27690622624_54698745d7_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8899/27690622624_54698745d7_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8899/27690622624_54698745d7.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8899/27690622624_54698745d7_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8899/27690622624_54698745d7_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8899/27690622624_54698745d7_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8899/27690622624_54698745d7.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8899/27690622624_54698745d7_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8899/27690622624_54698745d7.jpg 500w,
+		    	https://farm9.staticflickr.com/8899/27690622624_54698745d7_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8899/27690622624_54698745d7_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8899/27690622624_54698745d7_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View from Damsgård Pier" />
+		</a>
+    <h2>View from Damsgård Pier</h2>
+    <p class="date">2016-03-17 18:10:21</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8640/28025207610_66d50d4e85.jpg 500w,
+		    	https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8640/28025207610_66d50d4e85_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Pier at Damsgård" />
+		</a>
+    <h2>Pier at Damsgård</h2>
+    <p class="date">2016-03-17 18:07:36</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce.jpg 500w,
+		    	https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7542/27690624764_bc7bc774ce_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Høyskolen i Bergen Facade" />
+		</a>
+    <h2>Høyskolen i Bergen Facade</h2>
+    <p class="date">2016-03-16 20:00:44</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee.jpg 500w,
+		    	https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8633/28306948785_d5b5cbf5ee_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Høyskolen i Bergen Facade" />
+		</a>
+    <h2>Høyskolen i Bergen Facade</h2>
+    <p class="date">2016-03-16 20:00:38</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8686/28306955245_48e2612f3d.jpg 500w,
+		    	https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8686/28306955245_48e2612f3d_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Høyskolen i Bergen Facade" />
+		</a>
+    <h2>Høyskolen i Bergen Facade</h2>
+    <p class="date">2016-03-16 20:00:21</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8746/28306960975_37cd11ae75.jpg 500w,
+		    	https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8746/28306960975_37cd11ae75_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Kronbar Exterior" />
+		</a>
+    <h2>Kronbar Exterior</h2>
+    <p class="date">2016-03-16 19:56:21</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8846/27691255743_68fe0ca967.jpg 500w,
+		    	https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8846/27691255743_68fe0ca967_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Ulriken as seen from Årstad" />
+		</a>
+    <h2>Ulriken as seen from Årstad</h2>
+    <p class="date">2016-03-16 19:21:16</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6.jpg 500w,
+		    	https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8630/28228420401_ec948c4cd6_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Ulriken as seen from Årstad" />
+		</a>
+    <h2>Ulriken as seen from Årstad</h2>
+    <p class="date">2016-03-16 19:20:52</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c.jpg 500w,
+		    	https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8764/27691263923_0b1bcc9d2c_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Ulriken as seen from Årstad" />
+		</a>
+    <h2>Ulriken as seen from Årstad</h2>
+    <p class="date">2016-03-16 19:20:44</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8898/28272731246_0e7092c66c.jpg 500w,
+		    	https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8898/28272731246_0e7092c66c_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="View from Årstad" />
+		</a>
+    <h2>View from Årstad</h2>
+    <p class="date">2016-03-16 19:18:30</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a.jpg 500w,
+		    	https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8878/28272736126_3a038ddc8a_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Årstad Park" />
+		</a>
+    <h2>Årstad Park</h2>
+    <p class="date">2016-03-16 19:15:53</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm9.staticflickr.com/8643/27690668674_c6607afa36_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm9.staticflickr.com/8643/27690668674_c6607afa36_n.jpg" 
+		  data-at-480="https://farm9.staticflickr.com/8643/27690668674_c6607afa36.jpg" 
+		  data-at-640="https://farm9.staticflickr.com/8643/27690668674_c6607afa36_z.jpg" 
+		  data-at-768="https://farm9.staticflickr.com/8643/27690668674_c6607afa36_c.jpg" 
+		  data-at-1024="https://farm9.staticflickr.com/8643/27690668674_c6607afa36_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm9.staticflickr.com/8643/27690668674_c6607afa36.jpg" 
+		    	data-srcset="https://farm9.staticflickr.com/8643/27690668674_c6607afa36_n.jpg 320w,
+		    	https://farm9.staticflickr.com/8643/27690668674_c6607afa36.jpg 500w,
+		    	https://farm9.staticflickr.com/8643/27690668674_c6607afa36_z.jpg 640w,
+		    	https://farm9.staticflickr.com/8643/27690668674_c6607afa36_c.jpg 800w,
+		    	https://farm9.staticflickr.com/8643/27690668674_c6607afa36_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Årstad Park" />
+		</a>
+    <h2>Årstad Park</h2>
+    <p class="date">2016-03-16 19:14:50</p>
+  </article>
+  
+  <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 thumb">
+  	
+  		
+  	
+		
+			
+			
+			
+			
+			
+		
+		<a 
+		  href="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_b.jpg" 
+		  class="image" 
+		  
+		  data-at-320="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_n.jpg" 
+		  data-at-480="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb.jpg" 
+		  data-at-640="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_z.jpg" 
+		  data-at-768="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_c.jpg" 
+		  data-at-1024="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_b.jpg" 
+		  
+		   >
+		      <img 
+		    	data-sizes="auto" 
+		    	
+		    	data-src="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb.jpg" 
+		    	data-srcset="https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_n.jpg 320w,
+		    	https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb.jpg 500w,
+		    	https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_z.jpg 640w,
+		    	https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_c.jpg 800w,
+		    	https://farm8.staticflickr.com/7546/28272744186_485d6f0bfb_b.jpg 1024w"
+		    	
+		    	src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+		    	class="lazyload img-fluid" 
+		    	alt="Årstad Park" />
+		</a>
+    <h2>Årstad Park</h2>
+    <p class="date">2016-03-16 19:14:17</p>
+  </article>
+  
+
+    </div>
+    <div class="row no-gutter">
+      <div class="col-xs-12">
+        <footer id="footer" class="footer panel">
+	<div class="inner split">
+		<section>
+			<h2>Photography</h2>
+			<p>These are some photographs I have shot at various locations, for no particular reason other than  teaching myself photography.</p>
+		</section>
+		<section>
+			<h2>Find me on ...</h2>
+			<ul class="icons">
+				<li id="soc1">
+					<a href="https://www.flickr.com/photos/ole_vik/" title="Flickr">
+						<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 8c0 2.05 1.662 3.71 3.71 3.71 2.05 0 3.713-1.66 3.713-3.71S5.76 4.29 3.71 4.29C1.663 4.29 0 5.95 0 8zm8.577 0c0 2.05 1.662 3.71 3.712 3.71C14.33 11.71 16 10.05 16 8s-1.662-3.71-3.71-3.71c-2.05 0-3.713 1.66-3.713 3.71z"/></svg>
+					</a>
+				</li>
+				<li id="soc2">
+					<a href="https://linkedin.com/in/olehhvik" title="LinkedIn">
+						<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+					</a>
+				</li>
+				<li id="soc3">
+					<a href="https://github.com/OleVik/" title="GitHub">
+						<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.266 2-.27.68.004 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117.51.56.82 1.274.82 2.147 0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38C13.71 14.53 16 11.53 16 8c0-4.418-3.582-8-8-8"/></svg>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<p class="copyright">
+				All images &copy;&nbsp;<a href="http://olevik.me/">Ole Vik</a>,&nbsp;<a href="https://github.com/OleVik/photography">heavily-optimized</a>&nbsp;version of HTML5 Up's&nbsp;<a href="https://html5up.net/multiverse">Multiverse</a>.
+			</p>
+		</section>
+	</div>
+</footer>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+      baguetteBox.run('.gallery', {
+	    buttons: 'auto',
+        captions: true,
+        noScrollbars: true,
+        animation: 'fadeIn',
+        overlayBackgroundColor: 'rgba(0,0,0.9)'
+      });
+    </script>
+  </body>
+</html>
