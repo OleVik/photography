@@ -10,6 +10,6 @@ Accesses Flickr API and retrieves a JSON-output of all relevant images, saved to
 
 ### Default (`gulp`)
 
-Builds interface from templates, styles, and scripts and saves it to `dist/index.html` with all assets inlined. If `LOCAL_IMAGES` is set to `true` (`false` by default) in `.env.json` the Download-task is run, which saves all images (except originals, which are not used) to `dist/images`, and assigns image-paths to this directory rather than their Flickr-URLs.
+Builds interface from templates, styles, and scripts and saves it to `dist/index.html` with all assets inlined. If `LOCAL_IMAGES` is set to `true` (`false` by default) in `.env.json`, the Download-task is run, which saves all images (except originals, which are not used) to `dist/images` and assigns image-paths to this directory rather than their Flickr-URLs.
 
 MIT License 2017 by [Ole Vik](http://github.com/olevik), all images &copy; [Ole Vik](http://olevik.me/). Design by [HTML5 Up](https://html5up.net/multiverse).
